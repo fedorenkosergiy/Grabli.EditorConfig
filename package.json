@@ -1,7 +1,7 @@
 {
   "name": "fedorenkosergiy.grabli.editorconfig",
-  "version": "0.0.2",
-  "displayName": "Grabli.EditorConfig",
+  "version": "0.0.3",
+  "displayName": "Grabli EditorConfig",
   "description": "Editor config for Unity packages",
   "unity": "2020.3",
   "unityRelease": "23f1",
