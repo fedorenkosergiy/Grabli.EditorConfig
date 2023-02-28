@@ -1,9 +1,87 @@
+; .editorconfig file for Unity3d projects, packages
+; Copyright (c) 2023 Serhii Fedorenko
+; source https://github.com/fedorenkosergiy/Grabli.EditorConfig
+; version 0.0.4
+
 root = true
 
 [*.cs]
-indent_style             = tab
-indent_size              = 4
-end_of_line              = crlf
-charset                  = utf-8
+indent_style = tab
+indent_size = 4
+end_of_line = crlf
+charset = utf-8
 trim_trailing_whitespace = true
-insert_final_newline     = true
+insert_final_newline = true
+max_line_length = 120
+
+;________________________NAMING
+
+##########
+# STYLES #
+##########
+
+dotnet_naming_style.camel_case_style.capitalization = camel_case
+dotnet_naming_style.pascal_case_style.capitalization = pascal_case
+
+###########
+# SYMBOLS #
+###########
+
+# private fields
+dotnet_naming_symbols.private_field_symbols.applicable_accessibilities = private
+dotnet_naming_symbols.private_field_symbols.applicable_kinds = field
+
+# not private fields
+dotnet_naming_symbols.not_private_field_symbols.applicable_accessibilities = public, internal, protected, protected_internal, private_protected
+dotnet_naming_symbols.not_private_field_symbols.applicable_kinds = field
+
+# types
+dotnet_naming_symbols.type_symbols.applicable_kinds = class, struct, enum, interface, delegate
+
+# type parameters
+dotnet_naming_symbols.type_parameter_symbols.applicable_kinds = type_parameter
+
+# namespaces
+dotnet_naming_symbols.namespace_symbols.applicable_kinds = namespace
+
+# parameters and locals
+dotnet_naming_symbols.parameter_and_local_symbols.applicable_kinds = parameter, local
+
+#########
+# RULES #
+#########
+
+# private fields are camel case
+dotnet_naming_rule.private_fields_rule.symbols = private_field_symbols
+dotnet_naming_rule.private_fields_rule.style = camel_case_style
+dotnet_naming_rule.private_fields_rule.severity = error
+
+# all types are pascal case
+dotnet_naming_rule.type_rule.symbols = type_symbols
+dotnet_naming_rule.type_rule.style = pascal_case_style
+dotnet_naming_rule.type_rule.severity = error
+
+# all not private fields are pascal case
+dotnet_naming_rule.not_private_fields_rule.symbols = not_private_field_symbols
+dotnet_naming_rule.not_private_fields_rule.style = pascal_case_style
+dotnet_naming_rule.not_private_fields_rule.severity = error
+
+# type parameters are pascal case
+dotnet_naming_rule.type_parameters_rule.symbols = type_parameter_symbols
+dotnet_naming_rule.type_parameters_rule.style = pascal_case_style
+dotnet_naming_rule.type_parameters_rule.severity = error
+
+# namespaces are pascal case
+dotnet_naming_rule.namespace_rule.symbols = namespace_symbols
+dotnet_naming_rule.namespace_rule.style = pascal_case_style
+dotnet_naming_rule.namespace_rule.severity = error
+
+# parameters and locals are camel case
+dotnet_naming_rule.parameter_and_local_rule.symbols = parameter_and_local_symbols
+dotnet_naming_rule.parameter_and_local_rule.style = camel_case_style
+dotnet_naming_rule.parameter_and_local_rule.severity = error
+
+#########
+# OTHER #
+#########
+
