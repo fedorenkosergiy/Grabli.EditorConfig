@@ -16,6 +16,8 @@ max_line_length = 120
 
 ;________________________NAMING
 
+#Visual Studio
+
 ##########
 # STYLES #
 ##########
@@ -81,7 +83,14 @@ dotnet_naming_rule.parameter_and_local_rule.symbols = parameter_and_local_symbol
 dotnet_naming_rule.parameter_and_local_rule.style = camel_case_style
 dotnet_naming_rule.parameter_and_local_rule.severity = error
 
-#########
-# OTHER #
-#########
+;________________________SYNTAX
+
+#JetBrains Rider IDE
+resharper_csharp_blank_lines_around_region = 2
+
+resharper_csharp_brace_style = next_line
+resharper_csharp_indent_inside_namespace = true
+resharper_csharp_use_continuous_indent_inside_initializer_braces = true
+resharper_csharp_allow_comment_after_lbrace = false
+resharper_csharp_empty_block_style = together_same_line
 
