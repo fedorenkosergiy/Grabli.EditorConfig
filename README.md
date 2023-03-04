@@ -64,10 +64,10 @@ But if you're aware of possible issues I have no power to stop you :wink:
 
 The next step is combining the package source URL and the version marker.
 For example, 
-if you want to use version [`v0.0.1`](https://github.com/fedorenkosergiy/Grabli.EditorConfig/releases/tag/0.0.1)
+if you want to use version [`0.0.1`](https://github.com/fedorenkosergiy/Grabli.EditorConfig/releases/tag/0.0.1)
 it would be this line you need
 ```
-https://github.com/fedorenkosergiy/Grabli.EditorConfig.git#v0.0.1
+https://github.com/fedorenkosergiy/Grabli.EditorConfig.git#0.0.1
 ```
 One more example.
 If you want to use commit 
@@ -88,7 +88,7 @@ Here is an example
 ```
 ...
 "com.unity.2d.sprite": "1.0.0",
-"fedorenkosergiy.grabli.editorconfig": "https://github.com/fedorenkosergiy/Grabli.EditorConfig.git#v0.0.1",
+"fedorenkosergiy.grabli.editorconfig": "https://github.com/fedorenkosergiy/Grabli.EditorConfig.git#0.0.1",
 "com.unity.2d.tilemap": "1.0.0",
 ...
 ```
