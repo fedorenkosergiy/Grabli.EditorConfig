@@ -93,7 +93,7 @@ Here is an example
 ...
 ```
 
-
+As an option you can also use [package manager window](https://docs.unity3d.com/Manual/upm-ui.html) to add the package manually
 
 ## How to collaborate?
 There is no way for now. But I'm thinking of that
