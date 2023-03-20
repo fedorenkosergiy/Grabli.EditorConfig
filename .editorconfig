@@ -187,7 +187,7 @@ resharper_csharp_default_value_when_type_not_evident = default_literal
 #indents, aligns
 resharper_csharp_indent_style = tab
 resharper_csharp_indent_size = 4
-resharper_csharp_tab_width = 0
+resharper_csharp_tab_width = 4
 resharper_csharp_continuous_indent_multiplier = 0
 resharper_csharp_indent_nested_usings_stmt = true
 resharper_csharp_indent_nested_fixed_stmt = true
